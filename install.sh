@@ -33,7 +33,7 @@ for sh_absolute_path in $(ls ${SCRIPT_DIR}/*_help.sh); do
 done
 
 echoCurrStep "Adding ${SCRIPT_DIR} to PATH env variable"
-echo "Checking if ${SCRIPT_DIR} is already on \$PATH"
+echo "Checking if ${SCRIPT_DIR} is already on PATH"
 if [[ ":$PATH:" == *":${SCRIPT_DIR}:"* ]]; then
 	# Directory is already on PATH
 	echo -e "\t${GREEN}${SCRIPT_DIR} is already on the PATH. Skipping...${NOCOLOR}"
@@ -41,7 +41,7 @@ else
 	# Directory is not on PATH yet
 	echo -e "\t${YELLOW}${SCRIPT_DIR} is not on the PATH yet.${NOCOLOR}"
 
-	echo -e "\nAdding ${SCRIPT_DIR} to \$PATH"
+	echo -e "\nAdding ${SCRIPT_DIR} to PATH"
 
 	# Added line to .zshrc file
 	echo "export PATH=${SCRIPT_DIR}:\$PATH" >> ${HOME}/.zshrc
@@ -51,7 +51,7 @@ else
 	# This will run implicitly run the ${HOME}/.zshrc file
 	# Ended up commenting out this command because it seems to start an entirely new zsh shell and stop the execution of this bash script. Will just ask the user to call the 'source ${HOME}/.zshrc manually.
 	# exec ${SHELL}
-	echo -e "\t${GREEN}Added ${SCRIPT_DIR} to \$PATH${NOCOLOR}"
+	echo -e "\t${GREEN}Added ${SCRIPT_DIR} to PATH${NOCOLOR}"
 	echo -e "\n${RED}USER ATTENTION REQUIRED: Enter in the command 'source \${HOME}/.zshrc' or open a new terminal session.${NOCOLOR}"
 fi
 
