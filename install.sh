@@ -25,11 +25,28 @@ for sh_absolute_path in $(ls ${SCRIPT_DIR}/*_help.sh); do
 	sym_link_basename=${binary}h
 	echo "Creating symbolic link: ${sym_link_basename}"
 	if [ -f ${SCRIPT_DIR}/${sym_link_basename} ]; then
-		echo -e "\t${YELLOW}${sym_link_basename} already exists.${NOCOLOR}"
+		echo -e "\t${YELLOW}${sym_link_basename} already exists. Skipping...${NOCOLOR}"
 	else
 		ln -s ${sh_absolute_path} ${sym_link_basename}	
 		echo -e "\t${GREEN}${sym_link_basename} symbolic link created!${NO_COLOR}"
 	fi
 done
+
+echoCurrStep "Adding ${SCRIPT_DIR} to PATH env variable"
+echo "Checking if ${SCRIPT_DIR} is already on \$PATH"
+if [[ ":$PATH:" == *":${SCRIPT_DIR}:"* ]]; then
+	# Directory is already on PATH
+	echo -e "\t${GREEN}${SCRIPT_DIR} is already on the PATH. Skipping...${NOCOLOR}"
+else
+	# Directory is not on PATH yet
+	echo -e "\t${YELLOW}${SCRIPT_DIR} is not on the PATH yet.${NOCOLOR}"
+
+	echo "Adding ${SCRIPT_DIR} to \$PATH"
+
+	# Added line to .zshrc file
+	echo "export PATH=${SCRIPT_DIR}:\$PATH" >> ${HOME}/.zshrc
+	# source ${HOME}/.zshrc
+	echo -e "\t${GREEN}Added ${SCRIPT_DIR} to \$PATH${NOCOLOR}"
+fi
 
 echo ""
