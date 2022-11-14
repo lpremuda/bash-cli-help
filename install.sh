@@ -19,14 +19,14 @@ function echoCurrStep() {
 echo -e -n "\n" >> ${ALIAS_FILENAME}
 
 function moveAliasFile() {
-	echoCurrStep "Moving ${ALIAS_FILENAME} to ${HOME}/.oh-my-zsh/custom"
+	echoCurrStep "Copying ${ALIAS_FILENAME} to ${HOME}/.oh-my-zsh/custom"
 	if [[ -f ${HOME}/.oh-my-zsh/custom/${ALIAS_FILENAME} ]]; then
 		echo -e "${YELLOW}${HOME}/.oh-my-zsh/custom/${ALIAS_FILENAME} already exists. Creating backup file: ${ALIAS_FILENAME_BAK}${NOCOLOR}" 
 		mv ${HOME}/.oh-my-zsh/custom/${ALIAS_FILENAME} ${HOME}/.oh-my-zsh/custom/${ALIAS_FILENAME_BAK}
 		echo -e "\t${GREEN}Backing up ${HOME}/.oh-my-zsh/custom/${ALIAS_FILENAME} complete!${NOCOLOR}\n"
 	fi
-	echo -e "Moving ${ALIAS_FILENAME} to ${HOME}/.oh-my-zsh/custom\n"	
-	mv ${SCRIPT_DIR}/${ALIAS_FILENAME} ${HOME}/.oh-my-zsh/custom
+	echo -e "Copying ${ALIAS_FILENAME} to ${HOME}/.oh-my-zsh/custom\n"	
+	cp ${SCRIPT_DIR}/${ALIAS_FILENAME} ${HOME}/.oh-my-zsh/custom
 	echo "Done!"
 }
 
