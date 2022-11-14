@@ -2,6 +2,10 @@
 
 ALIAS_FILENAME="cli_help_aliases.zsh"
 ALIAS_FILENAME_BAK="${ALIAS_FILENAME}.bak"
+ALIAS_FILENAME_COPY="${ALIAS_FILENAME}.copy"
+
+# Copy alias file to maintain original values, so that 'git status' doesn't change when running an installation
+cp ${ALIAS_FILENAME} ${ALIAS_FILENAME_COPY}
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 chmod +x ${SCRIPT_DIR}/shared/load_shared_resources.sh
@@ -27,6 +31,9 @@ function moveAliasFile() {
 	fi
 	echo -e "Copying ${ALIAS_FILENAME} to ${HOME}/.oh-my-zsh/custom\n"	
 	cp ${SCRIPT_DIR}/${ALIAS_FILENAME} ${HOME}/.oh-my-zsh/custom
+
+	# Copy original alias file back and remove the copy
+	mv ${ALIAS_FILENAME_COPY} ${ALIAS_FILENAME}
 	echo "Done!"
 }
 
