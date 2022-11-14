@@ -85,7 +85,9 @@ else
 fi
 
 echoCurrStep "Adding CLI_HELP_DIR env variable to ${HOME}/.zshrc file"
-echo "export CLI_HELP_DIR=${SCRIPT_DIR}" >> ${HOME}/.zshrc
+if [[ $(cat ${HOME}/.zshrc | grep "export CLI_HELP_DIR") == "" ]]; then
+	echo "export CLI_HELP_DIR=${SCRIPT_DIR}" >> ${HOME}/.zshrc
+fi
 echo "Done!"
 
 echo ""
