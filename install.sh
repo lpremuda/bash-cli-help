@@ -67,4 +67,8 @@ else
 	echo -e "\n${RED}USER ATTENTION REQUIRED: Enter in the command 'source \${HOME}/.zshrc' or open a new terminal session.${NOCOLOR}"
 fi
 
-echo -e ""
+echoCurrStep "Adding CLI_HELP_DIR env variable to ${HOME}/.zshrc file"
+echo "export CLI_HELP_DIR=${SCRIPT_DIR}" >> ${HOME}/.zshrc
+echo "Done!"
+
+echo ""
