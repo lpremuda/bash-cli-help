@@ -22,7 +22,7 @@ if [[ -f ${HOME}/.oh-my-zsh/custom/${ALIAS_FILENAME} ]]; then
 	echo -e "\t${GREEN}Backing up ${HOME}/.oh-my-zsh/custom/${ALIAS_FILENAME} complete!${NOCOLOR}\n"
 fi
 echo -e "Moving ${ALIAS_FILENAME} to ${HOME}/.oh-my-zsh/custom\n"	
-mv ${ALIAS_FILENAME} ${HOME}/.oh-my-zsh/custom
+mv ${SCRIPT_DIR}/${ALIAS_FILENAME} ${HOME}/.oh-my-zsh/custom
 echo "Done!"
 
 for sh_absolute_path in $(ls ${SCRIPT_DIR}/*_help.sh); do
