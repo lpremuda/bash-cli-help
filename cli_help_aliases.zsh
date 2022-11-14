@@ -1,5 +1,7 @@
 alias asg='aws sts get-caller-identity | col -b'
 
+alias cdch='cd ${CLI_HELP_DIR}'
+
 alias k='kubectl'
 alias kcg='kubectl config get-contexts'
 alias kcs='kubectl config set-context'
