@@ -29,6 +29,16 @@ $ ./install.sh
 source ${HOME}/.zshrc
 ```
 
+&nbsp;
+## How to Add New Program
+
+1. Create `<command>_help.sh`, e.g. `go_help.sh`
+2. Add `<command>h` (e.g. `goh`) to `binaries` variable in `help_help.sh`, e.g.
+```shell
+binaries=("aws" "docker" "eks" "git" "go" "help" "k" "kind")
+```
+3. Add `<command>h` (e.g. `goh`) to `.gitignore`.
+4. Run `./install.sh` to make sure everything works.
 ----
 
 
