@@ -30,7 +30,7 @@ source ${HOME}/.zshrc
 ```
 
 &nbsp;
-## How to Add New Program
+## How to Add New Command
 
 1. Create `<command>_help.sh`, e.g. `go_help.sh`
 2. Add `<command>h` (e.g. `goh`) to `binaries` variable in `help_help.sh`, e.g.
