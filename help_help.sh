@@ -4,7 +4,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 source ${SCRIPT_DIR}/shared/load_shared_resources.sh
 
-binaries=("aws" "docker" "eks" "git" "go" "help" "k" "kind" "t")
+binaries=("aws" "docker" "eks" "git" "go" "h" "help" "k" "kind" "t")
 
 printTitle "Supported binaries:"
 for binary in ${binaries[@]}; do
