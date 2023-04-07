@@ -13,4 +13,9 @@ echo -e "\talias: kcs ..."
 echo "kubectl config set-context [--current] [--namespace=<namespace>]"
 echo -e "\talias: kn <namespace>"
 
+printTitle "kubectl exec"
+echo "kubectl exec -it <pod_name> [-c container_name] -- /bin/bash"
+echo "kubectl exec -it deployment/<deployment_name> -- /bin/bash"
+
+
 echo ""

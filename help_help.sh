@@ -6,6 +6,9 @@ source ${SCRIPT_DIR}/shared/load_shared_resources.sh
 
 binaries=("aws" "docker" "eks" "git" "go" "h" "help" "k" "kind" "t")
 
+printTitle "Change directory to source code directory:"
+echo "cdch (cd into cli help)"
+
 printTitle "Supported binaries:"
 for binary in ${binaries[@]}; do
 	echo "${binary}h"
