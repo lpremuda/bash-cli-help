@@ -5,16 +5,26 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 source ${SCRIPT_DIR}/shared/load_shared_resources.sh
 
 printTitle "helm pull"
-echo "helm pull <repo>/<chart> --untar"
-echo "helm pull <repo>/<chart> --untar --version <chart_version>"
+echo -e "helm pull [REPO]/[CHART] --untar"
+echo -e "helm pull [REPO]/[CHART] --untar --version [CHART_VERSION]"
+echo -e "\thelm pull istio/gateway --untar --version 1.16.3"
+echo -e "\thelm pull external-dns/external-dns --untar --version 1.12.1"
 
-printTitle "helm template"
-echo "helm template external-dns ${HOME}/charts/external-dns/external-dns"
+printTitle "List released charts in all namespaces:"
+echo -e "helm list -A"
 
-printTitle "helm install external-dns"
-echo "helm install external-dns ${HOME}/charts/external-dns/external-dns --dry-run --debug"
+printTitle "Get the manifest of a released chart:"
+echo -e "helm get manifest [RELEASE_NAME] -n [NAMESPACE]"
+echo -e "\thelm get manifest aws-load-balancer-controller -n kube-system"
+echo -e "helm get all [RELEASE_NAME] -n [NAMESPACE]"
+
+printTitle "How to render a helm chart with values:"
+echo -e "helm template [RELEASE_NAME] [CHART]"
+echo -e "\thelm template external-dns ${HOME}/charts/external-dns/external-dns"
+echo -e "helm install [RELEASE_NAME] [CHART] --dry-run --debug"
+echo -e "\thelm install external-dns ${HOME}/charts/external-dns/external-dns --dry-run --debug"
 
 printTitle "Debugging in helm"
-echo "https://helm.sh/docs/chart_template_guide/debugging/"
+echo -e "https://helm.sh/docs/chart_template_guide/debugging/"
 
-echo ""
+echo -e ""
