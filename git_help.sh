@@ -27,6 +27,11 @@ printTitle "Rebase and Force Push"
 echo "git pull —rebase origin <branch_name>"
 echo "git push —force origin <branch_name>"
 
+printTitle "Add files to latest commit without editing commit message:"
+echo "git add [FILES_TO_ADD]"
+echo "git commit --amend --no-edit"
+echo "git push --force (ggpush --force)" 
+
 printTitle "Log"
 echo "git log --oneline"
 echo "git log --stat"
