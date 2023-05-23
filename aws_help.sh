@@ -14,4 +14,7 @@ echo "unset AWS_PROFILE"
 printTitle "cat ~/.aws/config"
 cat ${HOME}/.aws/config
 
+printTitle "Route53"
+echo -e "aws route53 list-hosted-zones"
+
 echo ""
