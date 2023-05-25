@@ -50,5 +50,9 @@ binaries=("aws" "docker" "eks" "git" "go" "help" "k" "kind")
 
 1. Add alias to `cli_help_aliases.zsh`.
 2. Run `./install.sh` to copy over the new `cli_help_aliases.zsh` file into the appropriate directory.
+3. Reload `~/.zshrc` file:
+```shell
+source ${HOME}/.zshrc
+```
 
 
