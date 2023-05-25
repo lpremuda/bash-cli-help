@@ -30,6 +30,8 @@ source ${HOME}/.zshrc
 ```
 
 &nbsp;
+
+---
 ## How to Add New Command
 
 1. Create `<command>_help.sh`, e.g. `go_help.sh`
@@ -39,6 +41,14 @@ binaries=("aws" "docker" "eks" "git" "go" "help" "k" "kind")
 ```
 3. Add `<command>h` (e.g. `goh`) to `.gitignore`.
 4. Run `./install.sh` to make sure everything works.
-----
+
+&nbsp;
+
+---
+
+## How to Add New Alias
+
+1. Add alias to `cli_help_aliases.zsh`.
+2. Run `./install.sh` to copy over the new `cli_help_aliases.zsh` file into the appropriate directory.
 
 
