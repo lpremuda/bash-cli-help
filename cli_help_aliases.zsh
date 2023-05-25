@@ -9,6 +9,7 @@ alias h='helm'
 alias ia='iac-ops'
 
 alias k='kubectl'
+alias kccurrent='kubectl config current-context'
 alias kcg='kubectl config get-contexts'
 alias kcs='kubectl config set-context'
 alias kcu='kubectl config use-context'
