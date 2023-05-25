@@ -17,7 +17,7 @@ source ${SCRIPT_DIR}/shared/load_shared_resources.sh
 # ----------------------------------
 function echoCurrStep() {
     echo -e "\n${ORANGE}====> ${NOCOLOR} $1 \n"
-    sleep 1
+    sleep 0.1
 }
 
 echo -e -n "\n" >> ${ALIAS_FILENAME}
