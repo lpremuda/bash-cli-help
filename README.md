@@ -35,7 +35,7 @@ source ${HOME}/.zshrc
 ## How to Add New Command
 
 1. Create `<command>_help.sh`, e.g. `go_help.sh`
-2. Add `<command>h` (e.g. `goh`) to `binaries` variable in `help_help.sh`, e.g.
+2. Add `<command>` (e.g. `go`) to `binaries` variable in `help_help.sh`, e.g.
 ```shell
 binaries=("aws" "docker" "eks" "git" "go" "help" "k" "kind")
 ```
