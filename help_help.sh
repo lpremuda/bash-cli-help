@@ -4,7 +4,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 source ${SCRIPT_DIR}/shared/load_shared_resources.sh
 
-binaries=("aws" "curl" "docker" "eks" "git" "go" "h" "help" "k" "kind" "lsof" "openssl" "t")
+binaries=("aws" "curl" "docker" "eks" "git" "go" "h" "help" "k" "kind" "lsof" "openssl" "sed" "t")
 
 printTitle "Change directory to source code directory:"
 echo "cdch (cd into cli help)"
