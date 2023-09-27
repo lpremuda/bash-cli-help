@@ -24,7 +24,7 @@ echo "ggpush='git push origin \"\$(git_current_branch)\"'"
 echo "gcm='git checkout \"\$(git_main_branch)\"'"
 
 printTitle "Rebase and Force Push"
-echo "git pull —rebase origin <branch_name>"
+echo "git pull —r origin <branch_name>"
 echo "git push —force origin <branch_name>"
 
 printTitle "Add files to latest commit without editing commit message:"
