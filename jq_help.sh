@@ -30,6 +30,11 @@ echo -e "jq '. | {timestamp,report}'"
 echo -e "jq '.results[] | {name,age}'"
 echo -e "jq -r '.results[] | {name, age} | join(\" \")'"
 
+printTitle "Count number of elements in JSON array:"
+echo -e "jq length"
+echo -e "jq '[QUERY] | length'"
+echo -e "\tjq '.[1].metadata.labels.owner | length'"
+
 printTitle "Remove quotes from strings (output raw strings):"
 echo -e "jq -r [REST_OF_ARGUMENTS]"
 
