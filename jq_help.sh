@@ -30,5 +30,7 @@ echo -e "jq '. | {timestamp,report}'"
 echo -e "jq '.results[] | {name,age}'"
 echo -e "jq -r '.results[] | {name, age} | join(\" \")'"
 
+printTitle "Remove quotes from strings (output raw strings):"
+echo -e "jq -r [REST_OF_ARGUMENTS]"
 
 echo -e ""
