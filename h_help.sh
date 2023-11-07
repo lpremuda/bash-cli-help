@@ -13,10 +13,13 @@ echo -e "\thelm pull external-dns/external-dns --untar --version 1.12.1"
 printTitle "List released charts in all namespaces:"
 echo -e "helm list -A"
 
-printTitle "Get the manifest of a released chart:"
+printTitle "Get the manifest of released chart:"
 echo -e "helm get manifest [RELEASE_NAME] -n [NAMESPACE]"
 echo -e "\thelm get manifest aws-load-balancer-controller -n kube-system"
 echo -e "helm get all [RELEASE_NAME] -n [NAMESPACE]"
+
+printTitle "Get Values object of released charts:"
+echo -e "helm get values [RELEASE_NAME]"
 
 printTitle "List all versions for a given [REPO]/[CHART]:"
 echo -e "helm search repo -l | grep \"[REPO]\/[CHART]\""
