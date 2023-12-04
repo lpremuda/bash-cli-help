@@ -32,6 +32,9 @@ echo "git add [FILES_TO_ADD]"
 echo "git commit --amend --no-edit"
 echo "git push --force (ggpush --force)" 
 
+printTitle "Undo latest commit and leaving working tree untouched:"
+echo "git reset HEAD~"
+
 printTitle "Log"
 echo "git log --oneline"
 echo "git log --stat"
