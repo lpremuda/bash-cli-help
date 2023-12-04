@@ -30,6 +30,10 @@ echo -e "\thelm template external-dns ${HOME}/charts/external-dns/external-dns"
 echo -e "helm install [RELEASE_NAME] [CHART] --dry-run --debug"
 echo -e "\thelm install external-dns ${HOME}/charts/external-dns/external-dns --dry-run --debug"
 
+printTitle "Update dependencies in charts/ folder with configuration that matches Chart.yaml:"
+echo -e "helm dependency update"
+echo -e "tar -xvzf [PATH_TO_FILE]"
+
 printTitle "Debugging in helm"
 echo -e "https://helm.sh/docs/chart_template_guide/debugging/"
 
