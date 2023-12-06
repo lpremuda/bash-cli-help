@@ -35,6 +35,9 @@ echo "git push --force (ggpush --force)"
 printTitle "Undo latest commit and leaving working tree untouched:"
 echo "git reset HEAD~"
 
+printTitle "Skip pre-commit hooks:"
+echo "git commit --no-verify --mesage [MESSAGE]"
+
 printTitle "Log"
 echo "git log --oneline"
 echo "git log --stat"
