@@ -6,7 +6,7 @@ source ${SCRIPT_DIR}/shared/load_shared_resources.sh
 
 printTitle "Connect to Postgres database"
 echo -e "psql -h [HOST] -U [DB_USERNAME] [DATABASE]"
-echo -e "\tpsql -h localhost -U prisma_user -p 5432 nestjs-typescript-persistent-lucas"
+echo -e "\tpsql -h localhost -U prisma_user -p 5432 nestjs-kafka-app"
 
 printTitle "psql database commands:"
 echo -e "${GREEN}\\l${NOCOLOR}             List databases (\\list)"
