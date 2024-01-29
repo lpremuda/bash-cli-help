@@ -8,21 +8,22 @@ printTitle "Connect to Postgres database"
 echo -e "psql -h [HOST] -U [DB_USERNAME] [DATABASE]"
 echo -e "\tpsql -h localhost -U prisma_user -p 5432 nestjs-kafka-app"
 
-printTitle "psql database commands:"
+printTitle "Database commands:"
 echo -e "${GREEN}\\l${NOCOLOR}             List databases (\\list)"
 echo -e "${GREEN}\\l+${NOCOLOR}            List databases with more detail (\\list+)"
 echo -e "${GREEN}\\c <DATABASE>${NOCOLOR}  Connect to/select database <DATABASE>"
 
-printTitle "psql schema commands:"
+printTitle "Schema commands:"
 echo -e "${GREEN}\\dn${NOCOLOR}            List schemas"
 
-printTitle "psql table commands:"
-echo -e "${GREEN}\\dt${NOCOLOR}            List tables from current schema"
-echo -e "${GREEN}\\dt *.*${NOCOLOR}        List tables from all schemas"
-echo -e "${GREEN}\\dt <SCHEMA>.*${NOCOLOR} List tables from schema <SCHEMA>"
-echo -e "${GREEN}DROP TABLE <TABLE>;${NOCOLOR} Delete table <TABLE> (use quotes for mixed-case names)"
+printTitle "Table commands:"
+echo -e "${GREEN}\\dt${NOCOLOR}                   List tables from current schema"
+echo -e "${GREEN}\\dt *.*${NOCOLOR}               List tables from all schemas"
+echo -e "${GREEN}\\dt <SCHEMA>.*${NOCOLOR}        List tables from schema <SCHEMA>"
+echo -e "${GREEN}DROP TABLE <TABLE>;${NOCOLOR}    Delete table <TABLE> (use quotes for mixed-case names)"
 echo -e "${GREEN}SELECT * FROM <TABLE>;${NOCOLOR} Select all columns in <TABLE>"
-echo -e "${GREEN}TABLE <TABLE>;${NOCOLOR} Select all columns in <TABLE>"
+echo -e "${GREEN}TABLE <TABLE>;${NOCOLOR}         Select all columns in <TABLE>"
+echo -e "${GREEN}TRUNCATE <TABLE> [CASCADE];${NOCOLOR} Delete all entries in <TABLE> and, if CASCADE, delete relational entries in other tables"
 
 
 
