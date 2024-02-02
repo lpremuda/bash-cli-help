@@ -1,4 +1,4 @@
-# Computer Setup
+# General Computer Setup
 
 ## asdf
 
