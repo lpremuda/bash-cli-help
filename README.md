@@ -1,5 +1,11 @@
 # bash-cli-help
 
+## Introduction
+
+This repository contains helper commands that are used to provide references and examples for various CLI tools. It also provides helpful zsh aliases.
+
+The shell scripts contains the code, and the `install.sh` script creates symbolic links for this scripts and adds them to the `$PATH`. The symbolic links are named the same as their binary CLI tool with an "h" appended to the end, which stands for "help". For example, the helper command for `git` is `gith`.
+
 ## How to Install
 #### Note: Installation assumes you are using the `zsh` shell and have `oh-my-zsh` installed.
 &nbsp;
