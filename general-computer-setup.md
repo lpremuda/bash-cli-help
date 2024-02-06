@@ -12,6 +12,19 @@
 
 ## [iTerm2](https://iterm2.com/)
 
+## [Nodejs](https://nodejs.org/en)
+
+`npm` and `npx` get installed along with Nodejs.
+
+Installed via `asdf`:
+
+```bash
+asdf plugin add nodejs
+asdf install nodejs 20.11.0
+```
+
+Previous Releases: https://nodejs.org/en/about/previous-releases
+
 ## [oh-my-zsh](https://ohmyz.sh/)
 
 ## [neovim](https://neovim.io/)
@@ -30,7 +43,25 @@ M.abc = {
 }
 ```
 
+## [Postgresql](https://www.postgresql.org/)
+
+Installed via `brew`:
+
+```bash
+brew install postgresql@16
+echo 'export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"' >> ~/.zshrc
+```
+
+The `echo` command above is because you get the following message when you install `postgresql@16`:
+
+```
+postgresql@16 is keg-only, which means it was not symlinked into /opt/homebrew,
+because this is an alternate version of another formula.
+```
+
 ## Postman
+
+## [Rectangle](https://rectangleapp.com/)
 
 ## VSCode
 
