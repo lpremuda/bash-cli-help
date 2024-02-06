@@ -17,6 +17,8 @@ alias kn='f() { kubectl config set-context --current --namespace=$1 };f'
 
 alias mang='f() { man $1 | col -b | grep -A10 -- $2 };f'
 
+alias p='python'
+
 alias t='terraform'
 alias ti='terraform init'
 alias tst='terraform state'
