@@ -1,5 +1,7 @@
 # bash-cli-help
 
+## [General Computer Setup](computer-setup.md)
+
 ## Introduction
 
 This repository contains helper commands that are used to provide references and examples for various CLI tools. It also provides helpful zsh aliases.
