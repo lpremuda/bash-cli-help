@@ -54,12 +54,30 @@ echo 'export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"' >> ~/.zshrc
 
 The `echo` command above is because you get the following message when you install `postgresql@16`:
 
-```
+```bash
 postgresql@16 is keg-only, which means it was not symlinked into /opt/homebrew,
 because this is an alternate version of another formula.
 ```
 
 ## Postman
+
+## [Python](https://www.python.org/)
+
+Version installed: 3.11.7
+
+Installed via `brew`:
+
+```bash
+brew install python
+```
+
+Interpreter path: `/opt/homebrew/bin/python3`
+
+Add the following to `~/.zshrc`:
+
+```bash
+alias python=/opt/homebrew/bin/python3
+```
 
 ## [Rectangle](https://rectangleapp.com/)
 
