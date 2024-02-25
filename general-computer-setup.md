@@ -85,9 +85,11 @@ alias python=/opt/homebrew/bin/python3
 
 ### Extensions
 
+- Auto Rename Tag
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+- [Prettier - Code formatter](https://prettier.io/)
 - [VSCode Neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim) (UNINSTALLED because it doesn't support `<kj>` to `<Escape>` mapping)
 
     1. Had to go into Extension Settings and set `Vscode-neovim > Neovim Executable Paths: Darwin` to the full path of the `nvim` binary, i.e. `/opt/homebrew/bin/nvim`.
