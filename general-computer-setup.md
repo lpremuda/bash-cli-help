@@ -29,18 +29,36 @@ Previous Releases: https://nodejs.org/en/about/previous-releases
 
 ## [neovim](https://neovim.io/)
 
+### Install:
+
+```sh
+brew install neovim
+```
+
 ## [NvChad](https://nvchad.com/)
 
-- Within nvim, `<Spacebar> + t + h` to open Theme Switcher menu
-- To add `<jk>`/`<kj>` to `<Escape>` mapping, add the following to `${HOME}/.config/nvim/lua/custom/mappings.lua` (Reference doc: https://nvchad.com/docs/config/mappings):
+### Install:
+
+1. Run this command:
+```sh
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+```
+
+2. Run `:MasonInstallAll` command after lazy.nvim finishes downloading plugins.
+
+3. Delete the .git folder from nvim folder.
+
+### Open Theme Switcher menu:
+
+Within nvim, `<Spacebar> + t + h`.
+
+### Use `jk` or `kj` to escape:
+
+- To add `<jk>`/`<kj>` to `<Escape>` mapping, add the following to `${HOME}/.config/nvim/lua/mappings.lua` (Reference doc: https://nvchad.com/docs/config/mappings):
 
 ```lua
-M.abc = {
-  i = {
-     ["jk"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
-     ["kj"] = { "<ESC>", "escape insert mode" , opts = { nowait = true }},
-  }
-}
+map("i", "jk", "<ESC>")
+map("i", "kj", "<ESC>")
 ```
 
 ## [Postgresql](https://www.postgresql.org/)
@@ -81,6 +99,12 @@ alias python=/opt/homebrew/bin/python3
 
 ## [Rectangle](https://rectangleapp.com/)
 
+### Post-installation:
+
+1. Open Rectangle in the MacOS menu bar.
+2. Click on `Settings...`.
+3. Check the `Launch on login` checkbox.
+
 ## VSCode
 
 ### Extensions
@@ -96,16 +120,19 @@ alias python=/opt/homebrew/bin/python3
 
 - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
-    1. Ensure the following is added to `settings.json` file (i.e. Command + P and open `Preferences: Open User Settings (JSON)`)
+    1. Ensure the following is added to `settings.json` file (i.e. Shift + Command + P and open `Preferences: Open User Settings (JSON)`)
 
 ```json
-"vim.insertModeKeyBindings": [
 {
-    "before": ["j", "k"],
-    "after": ["<esc>"]
-},
-{
-    "before": ["k", "j"],
-    "after": ["<esc>"]
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<esc>"]
+        },
+        {
+            "before": ["k", "j"],
+            "after": ["<esc>"]
+        }
+    ]
 }
 ```
