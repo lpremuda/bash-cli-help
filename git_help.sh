@@ -7,6 +7,11 @@ source ${SCRIPT_DIR}/shared/load_shared_resources.sh
 printTitle "Get current branch name:"
 echo "git rev-parse --abbrev-ref HEAD"
 
+printTitle "git config"
+echo -e "git config --list --show-origin"
+echo -e "git config --global --list"
+echo -e "git config --local --list"
+
 printTitle "Tag"
 echo "git fetch --all --tags"
 echo "git checkout tags/<tag>"
