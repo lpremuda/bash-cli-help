@@ -12,6 +12,12 @@
 
 ## [iTerm2](https://iterm2.com/)
 
+### [How to Set Keyboard Shortcuts](https://stackoverflow.com/questions/6205157/how-to-set-keyboard-shortcuts-to-jump-to-beginning-end-of-line)
+
+See screenshot below:
+
+![iTerm2 - How to Set Keyboard Shortcuts](resources/iterm2_how_to_set_keyboard_shortcuts.png)
+
 ## [Nodejs](https://nodejs.org/en)
 
 `npm` and `npx` get installed along with Nodejs.
