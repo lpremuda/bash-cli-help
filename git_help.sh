@@ -43,6 +43,9 @@ echo "git reset HEAD~"
 printTitle "Create a commit that reverts the changes of the latest commit:"
 echo "git revert HEAD"
 
+printTitle "Modify a specific commit:"
+echo "https://stackoverflow.com/questions/1186535/how-do-i-modify-a-specific-commit"
+
 printTitle "Skip pre-commit hooks:"
 echo "git commit --no-verify --mesage [MESSAGE]"
 
