@@ -14,9 +14,16 @@
 
 ### [How to Set Keyboard Shortcuts](https://stackoverflow.com/questions/6205157/how-to-set-keyboard-shortcuts-to-jump-to-beginning-end-of-line)
 
-See screenshot below:
+Go to iTerm2 >> Settings... >> Profiles >> Keys >> Key Mappings. See screenshot below:
 
 ![iTerm2 - How to Set Keyboard Shortcuts](resources/iterm2_how_to_set_keyboard_shortcuts.png)
+
+To make `⌘ ←` and `⌘ →` work in Intellij terminal, add the following to your `~/.zshrc` file:
+
+```bash
+bindkey "\e\eOD" beginning-of-line
+bindkey "\e\eOC" end-of-line
+```
 
 ## [Nodejs](https://nodejs.org/en)
 
