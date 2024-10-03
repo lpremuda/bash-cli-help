@@ -38,4 +38,7 @@ echo -e "\tjq '.[1].metadata.labels.owner | length'"
 printTitle "Remove quotes from strings (output raw strings):"
 echo -e "jq -r [REST_OF_ARGUMENTS]"
 
+printTitle "Parse JSON string:"
+echo -e "echo \"[{\\\"type\\\":\\\"RETIRING_PRO\\\"}]\" | jq"
+
 echo -e ""

@@ -40,6 +40,9 @@ echo "git push --force (ggpush --force)"
 printTitle "Undo latest commit and leaving working tree untouched:"
 echo "git reset HEAD~"
 
+printTitle "Fix commit message of last commit:"
+echo "git commit --amend -m \"New commit message\""
+
 printTitle "Create a commit that reverts the changes of the latest commit:"
 echo "git revert HEAD"
 
