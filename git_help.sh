@@ -46,6 +46,9 @@ echo "git commit --amend -m \"New commit message\""
 printTitle "Create a commit that reverts the changes of the latest commit:"
 echo "git revert HEAD"
 
+printTitle "Revert a file to its state in master:"
+echo "git checkout origin/master [filename]"
+
 printTitle "Modify a specific commit:"
 echo "https://stackoverflow.com/questions/1186535/how-do-i-modify-a-specific-commit"
 
