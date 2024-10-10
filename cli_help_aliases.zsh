@@ -23,3 +23,7 @@ alias t='terraform'
 alias ti='terraform init'
 alias tst='terraform state'
 alias tsh='terraform show'
+
+alias y='yarn'
+alias ys='yarn serve'
+alias ysn='yarn serve --no-prelint'
