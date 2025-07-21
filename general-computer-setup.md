@@ -1,16 +1,16 @@
 # General Computer Setup
 
-## asdf
+# asdf
 
-## [bash-cli-help](https://github.com/lpremuda/bash-cli-help)
+# [bash-cli-help](https://github.com/lpremuda/bash-cli-help)
 
-## Docker Desktop
+# Docker Desktop
 
-## Evernote
+# Evernote
 
-## Homebrew
+# Homebrew
 
-## [iTerm2](https://iterm2.com/)
+# [iTerm2](https://iterm2.com/)
 
 ### [How to Set Keyboard Shortcuts](https://stackoverflow.com/questions/6205157/how-to-set-keyboard-shortcuts-to-jump-to-beginning-end-of-line)
 
@@ -25,7 +25,7 @@ bindkey "\e\eOD" beginning-of-line
 bindkey "\e\eOC" end-of-line
 ```
 
-## [Nodejs](https://nodejs.org/en)
+# [Nodejs](https://nodejs.org/en)
 
 `npm` and `npx` get installed along with Nodejs.
 
@@ -38,15 +38,19 @@ asdf install nodejs 20.11.0
 
 Previous Releases: https://nodejs.org/en/about/previous-releases
 
-## [oh-my-zsh](https://ohmyz.sh/)
+# [oh-my-zsh](https://ohmyz.sh/)
 
-## [neovim](https://neovim.io/)
+Setup: https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df
+
+# [neovim](https://neovim.io/)
 
 ### Install:
 
 ```sh
 brew install neovim
 ```
+
+Note: remember to install NvChad (see below).
 
 ## [NvChad](https://nvchad.com/)
 
@@ -74,7 +78,7 @@ map("i", "jk", "<ESC>")
 map("i", "kj", "<ESC>")
 ```
 
-## [Postgresql](https://www.postgresql.org/)
+# [Postgresql](https://www.postgresql.org/)
 
 Installed via `brew`:
 
@@ -90,9 +94,9 @@ postgresql@16 is keg-only, which means it was not symlinked into /opt/homebrew,
 because this is an alternate version of another formula.
 ```
 
-## Postman
+# Postman
 
-## [Python](https://www.python.org/)
+# [Python](https://www.python.org/)
 
 Version installed: 3.11.7
 
@@ -110,7 +114,7 @@ Add the following to `~/.zshrc`:
 alias python=/opt/homebrew/bin/python3
 ```
 
-## [Rectangle](https://rectangleapp.com/)
+# [Rectangle](https://rectangleapp.com/)
 
 ### Post-installation:
 
@@ -118,7 +122,7 @@ alias python=/opt/homebrew/bin/python3
 2. Click on `Settings...`.
 3. Check the `Launch on login` checkbox.
 
-## VSCode
+# VSCode
 
 ### Extensions
 
