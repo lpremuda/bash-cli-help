@@ -63,4 +63,10 @@ echo "git log <commit SHA>"
 echo "git log --graph"
 echo "git log --graph --oneline"
 
+printTitle "Compare on Github (examples)"
+echo "Branches          | /compare/master...feature-branch"
+echo "Branches (forked) | /compare/master...lpremuda:feature-branch"
+echo "Tags              | /compare/v1.123.0...v1.128.0"
+echo "Commits           | /compare/f75c570...3391dcc"
+
 echo ""
