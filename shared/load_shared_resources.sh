@@ -1,5 +1,8 @@
 #!/bin/bash
 
+BOLD=$(tput bold)
+NORMAL=$(tput sgr0)
+
 NOCOLOR='\033[0m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -21,6 +24,14 @@ function printLightBlue() {
 	echo -e "${LIGHTBLUE}$1${NOCOLOR}"
 }
 
+function printCyan() {
+  echo -e "${CYAN}$1${NOCOLOR}"
+}
+
 function printTitle() {
-	echo -e "\n$(printLightBlue "$1")"
+  echo -e "\n${BOLD}$(printLightBlue "$1")${NORMAL}"
+}
+
+function printSubtitle() {
+  echo -e "$(printCyan "$1")"
 }
